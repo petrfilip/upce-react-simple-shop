@@ -3,17 +3,7 @@ import './App.css';
 import {Product} from "./components/Product/Product";
 import {ProductList} from "./components/ProductList/ProductList";
 import {ProductListLoader} from "./components/ProductListLoader/ProductListLoader";
-
-const AppTheme = {
-  light: {
-    textColor: "#000",
-    backgroundColor: "#fff"
-  },
-  dark: {
-    textColor: "#fff",
-    backgroundColor: "#333"
-  }
-}
+import {SearchBar} from "./components/SearchBar/SearchBar";
 
 const data = [
   {
@@ -29,7 +19,7 @@ const data = [
 function App() {
   return (
       <div className="App">
-        {/*<SearchBar/>*/}
+        <SearchBar/>
         <hr/>
         Product
         <Product product={data[0]}/>
